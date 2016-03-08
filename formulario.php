@@ -71,9 +71,8 @@ width: 40%;
 td{
   cursor: pointer;
 }
- </style>
 
- <div>
+ </style>
 
 <?php
 //llamado WSDL
@@ -149,14 +148,9 @@ $vehiDes=$orgVehi->GetVehiclesListResult->Vehicle[$i]->Description;
      echo '</div>';
   echo '</div>';
 echo '</div>';
-
-
-   
-
- echo '</form>';
-
+echo '</form>';
 ?>
-</div>
+
 <br>
 </body>
 <div id="footer">

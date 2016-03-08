@@ -82,6 +82,13 @@ $params = array(
 );
 $response = $client->__soapCall('Login', array($params));
 $token = $response->LoginResult->Token;
+if($token==null)
+{
+echo '<script languaje="javascript">';
+echo   'alert("Error de Sesión");';
+echo 'location.href = "cerrar.php";';
+echo '</script>';
+}
  //Paramtros LOGIN
 //hander a mantener secion activa token*/
 $core = "http://www.omnibridge.com/SDKWebServices/Core";
